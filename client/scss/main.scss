@@ -1,0 +1,74 @@
+@import './var.scss';
+
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    padding: 0;
+    margin: 0;
+    background-color: $mainBackColor;
+    display: flex;
+    flex-direction: row;
+  }
+.left_bar{
+  .menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .active{
+      position: relative;
+      margin-left: 10px;
+      opacity: 1;
+      cursor: pointer;
+      border: 3px solid #ccc;
+      color: #fff; /* Цвет текста */
+      transform: scale(1.2); /*вот так*/
+    }
+    .menu_elem{
+      font-size: 20px;
+      color: #ccc;
+      display: flex;
+      height: 25%;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .menu_elem:hover{
+      position: relative;
+      margin-left: 10px;
+      opacity: 1;
+      cursor: pointer;
+      border: 3px solid #ccc;
+      color: #fff; /* Цвет текста */
+      transform: scale(1.2); /*вот так*/
+    }
+  }
+    display: flex;
+    width: 7%;
+    align-items: center;
+    justify-content: center;
+    color: $barFontColor;
+    background-color: $barBackColor;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    color: $mainFontColor;
+    .info{
+      display: flex;
+      width: 80%;
+    }
+}
+.content_img{
+  display: flex;
+  width: 50px;
+}
